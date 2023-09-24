@@ -41,6 +41,7 @@ int main(int argc, char **argv) {
         execv("/bin/sh", cmd);
     }
 	else {
+        // 0x08048f7b <+187>:	call   0x804a230 <fwrite>
 		fwrite("No !\n", 1, 5, stderr);
     }
     return 0;
